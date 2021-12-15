@@ -1,49 +1,14 @@
-# Getting Started with Create React App
+# Learning with me, Jin
 
-## 이렇게 한번 해보세요!
+React 테스팅 도구인 Jest와 Enzyme에 대해서 배워요! 🎉
 
-`git clone https://github.com/faker007/testing-click-counter.git`
-`npm install`
-or
-`yarn install`
+## Learning points
 
-### `npm start`
+### 1. Removing data-test attributes
 
-최애 브라우저로 열어 보세요! [http://localhost:3000](http://localhost:3000)
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- `$ npm install --save-dev babel-plugin-react-remove-properties`
+- `$ npm run eject`
+- `$ following the babel config`
+  [Click me](https://www.npmjs.com/package/babel-plugin-react-remove-properties)
+- `$ npm run build`
+- `data-test atrributes are gone! 😎`
