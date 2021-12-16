@@ -38,4 +38,20 @@ React 테스팅 도구인 Jest와 Enzyme에 대해서 배워요! 🎉
   - Test that value is 0 initially
   - Next lecture: simulating clicks
 - Use `Enzyme.text()` method
+
   - [Doc link](https://enzymejs.github.io/enzyme/docs/api/ShallowWrapper/text.html)
+
+### 5. Don't find too early!
+
+- Elements are unreliable after wrapper has changed
+
+## Lessons Summary
+
+### 27. Acceptance Test and Review (인수 테스트 혹은, E2E)
+
+- Set up a (very) simple React app with Jest and Enzyme
+- Used Enzyme's shallow() function to render a component
+- Tested that required DOM elements were rendered using find()
+- Used Enzyme's .text() method to extract the text of an element
+- Tested component for updates after interaction
+- Created re-usable `setup()` and `findByTestAttr()` functions
