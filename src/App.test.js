@@ -20,23 +20,27 @@ const INCREMENT_BUTTON = 'increment-button';
 const COUNTER_DISPLAY = 'counter-display';
 
 test('renders without error', () => {
-  const wrapper = shallow(<App />);
+  const wrapper = setup();
   const appComponent = findByTestAttr(wrapper, 'component-app');
   expect(appComponent.length).toBe(1);
 });
 
 test('renders increment button', () => {
-  const wrapper = shallow(<App />);
+  const wrapper = setup();
   const button = findByTestAttr(wrapper, 'increment-button');
   expect(button.length).toBe(1);
 });
 
 test('renders counter display', () => {
-  const wrapper = shallow(<App />);
+  const wrapper = setup();
   const counterDisplay = findByTestAttr(wrapper, 'counter-display');
   expect(counterDisplay.length).toBe(1);
 });
 
-test('counter display starts at 0', () => {});
+test('counter display starts at 0', () => {
+  const wrapper = setup();
+  const count = findByTestAttr(wrapper, 'count').text(); // Always return String type!
+  expect(count).toBe('0');
+});
 
 test('clicking the button, increments counter display', () => {});
